@@ -1,0 +1,1390 @@
+/*=================================/
+/=========preloading images========/
+/==================================*/
+#preloadOne { background: url(http://jamesdalby.net/img/header/navigation/aboutText.png) no-repeat -9999px -9999px; }
+#preloadTwo { background: url(http://jamesdalby.net/img/header/navigation/workText.png) no-repeat -9999px -9999px; }
+#preloadThree { background: url(http://jamesdalby.net/img/header/navigation/contactText.png) no-repeat -9999px -9999px; }
+#preloadFour { background: url(http://jamesdalby.net/img/header/navigation/resumeText.png) no-repeat -9999px -9999px; }
+
+#preloadFive{ background: url(http://jamesdalby.net/img/background/pittsburghSkyline.png) no-repeat -9999px -9999px; }
+/*==================================/
+/=============contact form==========/
+/===================================*/
+#contact-form label span {
+
+  font-size: 0.8em!important;
+}
+html,body { height:100%; }
+
+body{
+font-size:18px;
+}
+h1,h2,h3,h4,h5,h6,p{
+line-height:1.45;
+}
+h1{
+    font-size:1.1em;
+}
+h2{
+    font-size:0.9em;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight:700;
+}
+p{
+    font-size:0.6em;
+}
+li{
+font-size:0.9em;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*==========================================/
+=========RESPONSIVE GRID NO TOUCHING========/
+===========================================*/
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	/*width: 32.2%;*/
+    width: 31.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+/*===================/
+=======HEADER=======/
+==================*/
+#wrapper {
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    margin:0 auto;
+    position:relative;
+}
+.addOnContent {
+  min-height: 250px;
+  height: auto !important;
+  height: 250px;
+    background-color:black;
+}
+
+body {
+    width:100%;
+    height:auto;
+   /*background:url('../img/background/stardust.png');*/
+}
+
+.navigation {
+    overflow:hidden;
+    width:80%;
+    height:auto;
+    background-color:rgba(204,204,204,0.4);
+    margin:10% auto;
+    padding-bottom:10px;;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border:2px solid #aaa9a9;
+}
+.navigation li{
+position:relative;
+}
+
+
+
+.header-logo {
+    width:100%
+        
+}
+.header-logo:hover{
+    cursor:pointer;
+}
+
+
+.logo {
+    width:100%;
+    display:block;
+ 
+        
+}
+
+.work {
+    width:100%;
+    display:block;
+    padding-bottom:10px;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: left .6s ease-in-out;
+    transition: left .6s ease-in-out;
+    cursor:pointer;
+}
+
+.contact {
+    width:100%;
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    padding-bottom:10px;
+    cursor:pointer;
+}
+.aboutContainer p {
+  color: #3A3939;
+  margin-bottom: 1%;
+  width: 99%;
+}
+
+.resume {
+    width:100%;
+    display:block;
+    padding-bottom:10px;
+    position:absolute;
+    top:0;
+    left:0;
+    cursor:pointer;
+}
+
+.row.nav {
+    width:62%
+}
+
+.logoNavCol {
+    width:9%;
+    margin-right:6%
+}
+
+.header {
+    width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+   
+}
+
+.seperator {
+    width:100%;
+    height:10px;
+background: #11706b; /* Old browsers */
+background: -moz-linear-gradient(top, #11706b 1%, #11706b 10%, #14837d 50%, #11706b 78%, #11706b 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#11706b), color-stop(10%,#11706b), color-stop(50%,#14837d), color-stop(78%,#11706b), color-stop(100%,#11706b)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #11706b 1%,#11706b 10%,#14837d 50%,#11706b 78%,#11706b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #11706b 1%,#11706b 10%,#14837d 50%,#11706b 78%,#11706b 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #11706b 1%,#11706b 10%,#14837d 50%,#11706b 78%,#11706b 100%); /* IE10+ */
+background: linear-gradient(to bottom, #11706b 1%,#11706b 10%,#14837d 50%,#11706b 78%,#11706b 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11706b', endColorstr='#11706b',GradientType=0 ); /* IE6-9 */
+    
+}
+
+.content {
+    width:80%;
+    display:block;
+    margin:0 auto;
+    height:auto;
+    overflow:hidden;
+}
+
+.contentBackground {
+    background: url("../img/background/seamless_paper_texture.png") repeat scroll 0% 0% transparent;
+    padding-top: 0%;
+    height: auto;
+    min-height: 465px;
+}
+
+.content h1 {
+    text-align:center;
+}
+
+.proWork {
+position:relative;
+text-align:center;
+}
+
+.professionalWork {
+    margin: 0 auto;
+    display: block;
+    color: #3a3939;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-bottom: 3%;
+}
+
+
+
+.fieldStream {
+    width:100%;
+    -webkit-filter:grayscale(100%); /*chrome19+ & safari 6+ */
+}
+.fieldStream:hover{
+    filter:none;
+    -webkit-filter:grayscale(0%);
+}
+
+
+.truerunner {
+    width:100%;
+    -webkit-filter:grayscale(100%); /*chrome19+ & safari 6+ */
+}
+.truerunner:hover {
+    filter:none;
+    -webkit-filter:grayscale(0%);
+}
+
+
+.aboutText {
+     width:100%;
+    margin:0 auto;
+    display:block;
+    padding-bottom:10px;
+    display:none;
+}
+.about {
+width: 100%;
+display: block;
+padding-bottom: 10px;
+position:absolute;
+    top:0;
+    left:0;
+/*left:-80px;*/
+/*transition: left .6s ease-in-out;*/
+cursor:pointer;
+background:url('../img/header/navigation/aboutNewIcon.png');
+}
+.aboutText{
+width: 100%;
+  display: block;
+  padding-bottom: 10px;
+  position: relative;
+  /* left: -80px; */
+  /* transition: left .6s ease-in-out; */
+  cursor: pointer;
+}
+.col span_1_of_9{
+    margin:0;
+}
+
+/*==========================/
+==========SWIPER============/
+===========================*/
+
+.mySwiper {
+  width: 83%;
+  padding-top: 2%;
+}
+
+.toolBox {
+    margin: 9% 0px 0.5% 1% !important;
+    padding-bottom: 3%;
+}
+
+/*.toolGrayscale {
+    width:100%;
+    -webkit-filter:grayscale(100%); /*chrome19+ & safari 6+ */
+}*/
+
+.toolGrayscale:hover{
+    filter:none;
+    -webkit-filter:grayscale(0%);
+}
+
+.footer {
+    background: url("../img/background/stardust.png") repeat scroll 0% 0% transparent;
+}
+
+.footerContainer {
+    width:80%;
+    display:block;
+    margin:0 auto;
+    height:auto;
+    overflow:hidden;
+    
+}
+.footerContainer p{
+    margin-left:5%;
+    color:#cccccc;
+}
+.footerContainer li {
+  color: #cccccc;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+.footerContainer p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.5em;
+}
+
+
+.techUsed {
+    margin-top:3%;
+    
+}
+
+.toolsBox {
+    font-family: 'Open Sans', sans-serif; font-weight:700;
+    color:#3a3939;
+    padding-bottom:3%
+}
+
+.welcomeText {
+  left: 0px;
+  color: #CCC;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 400;
+  margin-top: 27%;
+}
+
+.welcome {
+    position:relative;
+    
+}
+
+.welcomeSpan {
+  font-weight: 800;
+  display: block;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.body {
+    margin-top:8px
+}
+
+#popup {
+    height:40%;
+    width:100%;
+    background-color:rgba(58,57,57,0.9);
+    position:absolute;
+    top:59%;
+    left:0;
+    display:none;
+    pointer-events:none;
+    
+}
+
+#popupTrue {
+    height:40%;
+    width:100%;
+    background-color:rgba(58,57,57,0.9);
+    position:absolute;
+    top:59%;
+    left:0;
+    display:none;
+    pointer-events:none;
+}
+/*=======================/
+=========BODY===========/
+=======================*/
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.fieldStreamText {
+    color:#cccccc;
+    text-align:center;
+    font-weight:700;
+    margin-top:7%;
+}
+
+.trueRunner {
+    color:#cccccc;
+    text-align:center;
+    font-weight:700;
+    margin-top:7%;
+    
+}
+
+.prowork {
+  /* top: 22%; */
+  left: 0;
+  color: #cccccc;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  margin-top: 27%;
+  position: absolute;
+}
+.proWork li{
+    cursor:pointer;
+}
+
+.prowork li:hover{
+color:#959393;
+}
+
+.workSection {
+    background: url("../img/background/stardust.png") repeat scroll 0% 0% transparent;
+    height:auto;
+    width:100%;
+    overflow:hidden;
+position:relative;
+}
+.paperBackground{
+    background: url('../img/background/seamless_paper_texture.png');
+    height:auto;
+    width:100%;
+    overflow:hidden;
+position:relative;
+}
+
+.fieldStreamWork:hover {
+    cursor:pointer;
+}
+
+.workLogo {
+  width: 9%;
+}
+
+.siteHighlights {
+  float: left;
+  width: 100%;
+  min-height: 110px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.techsed {
+   float:left; 
+    width:50%;
+}
+
+.techused {
+  width: 100%;
+  float: left;
+  min-height: 110px;
+  height: auto;
+  padding-left: 20px;
+    color: #3A3939;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif; 
+}
+
+li {
+    font-family: 'Open Sans', sans-serif; 
+    font-weight:400;
+}
+ul{
+    font-family: 'Open Sans', sans-serif; 
+    font-weight:400;
+}
+
+.launch {
+  text-align: left;
+  margin-top:2%;
+}
+.launch a {
+    background-color: #3A3939;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+}
+.launch a:hover{
+background-color:#5C5B5B;
+}
+.workTitle {
+    
+    color: #3A3939;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 700;
+    font-size: 0.6em;
+}
+
+.workContainer {
+  display:none;
+  margin-top: 0%;
+  margin-bottom: 10%;
+  overflow: hidden;
+}
+
+.workDesc {
+    margin-bottom: 3%;
+    color: #3A3939;
+    font-size: 0.4em;
+}
+
+.workContent {
+    width:80%;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+    z-index:2;
+    
+}
+
+.logoInner {
+    width:100%;
+}
+
+.resumeSection {
+    background: url('../img/background/seamless_paper_texture.png');
+    height:auto;
+    width:100%;
+    overflow:hidden;
+}
+
+.resumeContent {
+    width:80%;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+.resumeContainer {
+  width: 89%;
+  overflow: hidden;
+  margin-top: 20px;
+  color: #3A3939;
+}
+
+.resumeLogo {
+    width:9%;
+    margin-right:6%
+}
+
+.internship{
+    margin-left:0%;
+    float:left;
+    width:100%;
+    width:100%;
+    overflow:hidden;
+}
+.internship li{
+    list-style:disc;
+}
+.industryWeapon{
+    float:left;
+    width:100%;
+    overflow:hidden;
+}
+.industryWeapon li{
+ list-style:disc;
+}
+
+.dsg{
+margin-left:5%;
+    float:left;
+    width:100%;
+}
+
+.questfore{
+    margin-left:5%;
+    float:left;
+}
+
+
+.background {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  float: left;
+  padding-right: 5px;
+  margin-bottom: 3px;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.educations {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  float: left;
+  padding-right: 5px;
+  width: 100%;
+  margin-bottom: 3px;
+  font-size: 0.7em;
+}
+
+.internshipText {
+    font-family: 'Open Sans', sans-serif; font-weight:700;
+    float:left;
+}
+
+.experience {
+  font-family: 'Open Sans', sans-serif; font-weight:700;
+    float:left;
+    padding-right:5px;
+    width:100%;
+    overflow:hidden;
+}
+
+.industry {
+    font-family: 'Open Sans', sans-serif; font-weight:700;
+    float:left;
+}
+
+.tealBar {
+    float: left;
+    height: 5px;
+    width: 70%;
+    background-color: #17847f;
+    margin-top:7px
+}
+
+.backgroundSummary {
+    float:left;
+    margin-bottom:10px;
+}
+
+.education {
+    float:left;
+    width:100%;
+    margin-bottom:10px;
+}
+
+.quest {
+    float:left;
+    font-family: 'Open Sans', sans-serif; font-weight:700;
+}
+
+.questFore {
+  float: left;
+  font-size: 0.6em;
+}
+
+.QfDate {
+  float: left;
+  font-style: italic;
+  font-size: 0.6em;
+}
+
+.takeWithYou {
+    float:left;
+    width:100%;
+}
+
+.dicksSport {
+    float:left;
+    font-family: 'Open Sans', sans-serif; font-weight:700;
+}
+
+.dsgTitle {
+  float: left;
+  font-size: 0.6em;
+}
+
+.DSGDate {
+  float: left;
+  font-style: italic;
+  font-size: 0.6em;
+}
+
+.iwTitle {
+  float: left;
+  font-size: 0.6em;
+}
+
+.iwDate {
+  float: left;
+  font-style: italic;
+  font-size: 0.6em;
+}
+
+.internTitile {
+  float: left;
+  font-size: 0.6em;
+}
+
+.compKnowledge {
+    width:100%;
+    float:left;
+}
+
+.comp {
+     font-family: 'Open Sans', sans-serif; font-weight:700;
+    float:left;
+    padding-right:5px; 
+}
+
+.computerfullWidth {
+    width:100%;
+}
+
+.knowledge {
+    float:left
+}
+
+.fullWidth {
+    width:100%;
+}
+
+.experienceUl {
+    float:left;
+}
+
+.experienceDiv {
+    width:100%;
+}
+
+.backgroundUL {
+    position:relative;
+    width:100%;
+}
+
+.compKnow {
+    width:80%;
+}
+
+.experienceTeal {
+    width:89%;
+}
+
+.backgroundDesc {
+    float:left;
+}
+
+.bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  float: left;
+  margin-bottom: 3px;
+  font-size: 0.6em!important;
+}
+li {
+    margin-bottom:3px;
+}
+
+.indenting {
+  margin-left: 20px;
+  margin-bottom: 5px;
+  font-size: 0.4em;
+}
+
+.indentDeeper {
+    margin-left:20px;
+}
+
+
+.subHead {
+    padding-left:10px;
+}
+
+.backgroundIndent {
+    margin-left:10px;
+    font-size:0.4em;
+}
+
+.resume-logo {
+    width:100%;
+}
+
+#welcomeSection {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  background:url('../img/background/stardust.png');
+}
+.logoInner{
+    cursor:pointer;
+}
+
+.techused li {
+    margin-left: 5%;
+    list-style: outside circle;
+    font-size: 0.5em;
+     color: #3A3939;
+}
+
+.siteHighlights li{
+    margin-left: 5%;
+    list-style: outside circle;
+    font-size: 0.5em;
+    color: #3A3939;
+}
+
+
+.techTitle {
+    width: 100%;
+    float: left;
+    color: #3A3939;
+    font-size: 0.6em;
+}
+
+.highlightsTitle {
+    width: 100%;
+    float: left;
+    color: #3A3939;
+    font-size: 0.6em;
+}
+
+.techContainer {
+    float:left;
+    width:50%;
+    color:#3A3939;
+}
+
+.highlightContainer {
+    float:left;
+    width:50%;
+    color:#3A3939;
+}
+
+.siteLaunch {
+  width: 100%;
+  float: left;
+}
+.personalWork {
+    display:none;
+}
+
+.backgroundBlue {
+    background-color:#178882;
+}
+
+.workPage {
+    float: left;
+    background-color: #7A797D;
+    margin-left: 10px;
+    margin-top: 10%;
+}
+
+.perrymanClick:hover {
+    cursor:pointer;
+}
+
+.privateIndustryClick:hover {
+    cursor:pointer;
+}
+
+.aboutSection {
+    background: url('../img/background/seamless_paper_texture.png');
+    height:auto;
+    width:100%;
+    overflow:hidden;
+}
+
+.aboutContainer {
+    margin-top:0%;
+    margin-bottom:10%;
+    overflow:hidden;
+}
+
+.aboutBody {
+  margin-bottom: 3%;
+  color: #3A3939;
+}
+
+.aboutLogo {
+    width:9%;
+}
+
+.aboutlogoInner {
+   width:100%;
+}
+
+.aboutPage {
+  float: left;
+  background-color: #7A797D;
+  margin-left: 7%;
+  margin-top: 10%;
+}
+
+.aboutBodyContainer {
+  width: 89%;
+  min-height: 712px;
+  height: auto;
+}
+
+.workContainerBody {
+    width: 89%;
+}
+
+.workImage {
+  width:34%;
+    float: left;
+}
+.workDescription {
+    width: 61%;
+    float: left;
+}
+
+.workPortfolio {
+  width: 100%;
+  float: left;
+}
+
+.sectionTitle {
+  color: #3a3939;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1%;
+  font-size: 0.9em;
+  text-align:center;
+}
+.contactSection {
+    background: url('../img/background/seamless_paper_texture.png');
+    height:auto;
+    width:100%;
+    overflow:hidden;
+}
+
+.contactBodyContainer {
+    width:89%;
+}
+
+
+/*.pittsburghSkyline {
+   width: 100%;
+  position: relative;
+  z-index: 1;
+}*/
+.pittsburghSkyline {
+  width: 100%;
+  z-index: 1;
+  margin-top: -10%;
+  position: absolute;
+  bottom: 0;
+}
+.sectionAbsoluteHolder {
+  width: 100%;
+  overflow: hidden;
+  /*min-height: 529px;*/
+
+
+}
+
+.quoteText {
+    font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+.welcomeSubText {
+    font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.headShot {
+  width: 15%;
+  float: left;
+  background-color: white;
+  margin-right: 1%;
+}
+.headShotImg {
+  width: 100%;
+  float: left;
+}
+
+.tool {
+  float: left;
+  width: 25%;
+  overflow: hidden;
+}
+.tool:hover{
+cursor:pointer;
+}
+
+.toolImg {
+    width:100%;
+}
+
+.toolContainer {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+}
+
+.otherContainer {
+    width:50%;
+    float:left;
+    overflow:hidden;
+    height:200px;
+}
+
+.toolboxList {
+  float: left;
+  color: #ece8e0;
+  background-color: #7a797d;
+  border-radius: 10px;
+  /* margin-top: 8%; */
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 73%;
+  margin-top: 10.5%;
+}
+.toolboxList li {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline;
+}
+
+
+.transparent {
+    width:100%;
+    height:auto;
+}
+
+.sectionRelativeHolder {
+    width: 100%;
+  overflow: hidden;
+  /*min-height: 529px;*/
+    position:relative;
+}
+
+.pti {
+    width:100%;
+    overflow:hidden;
+}
+
+.areaConcentration {
+      width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.computerKnowledge {
+    height:auto;
+    overflow:hidden;
+    width:100%;
+}
+
+.styleList li {
+  font-size: 0.4em;
+  margin-left: 5%;
+  list-style: circle;
+  float: left;
+  line-height: 1.45;
+  width: 100%;
+}
+
+
+.dicksSportingGoods {
+    width: 100%;
+  overflow: hidden;
+}
+
+.fullWidthList {
+    width:100%;
+    overflow:hidden;
+}
+
+.takeMeWithYou {
+    width:100%;
+    overflow:hidden;
+    
+}
+.takeMeWithYou li {
+  width: 100%;
+  overflow: hidden;
+  font-size: 0.8em;
+}
+
+.aboutPageLogo {
+    cursor:pointer;
+   
+}
+
+.contactPageLogo {
+    cursor:pointer;
+   
+}
+
+.resumePageLogo {
+    cursor:pointer;
+}
+.workImage img{
+width:100%;
+}
+.spaceing {
+
+    height:auto;
+    min-height:237px;
+    background-color:black
+}
+.oakdale {
+  float: left;
+  font-size: 0.5em;
+}
+
+.pittsburghSkylineWork {
+      width: 100%;
+  z-index: 1;
+  margin-top: -10%;
+  position: absolute;
+  bottom: 0;
+}
+
+.workText {
+  width: 83%;
+  margin-bottom: 18%;
+  position: relative;
+}
+
+.footerLi{
+font-size:0.7em;
+margin:0 auto;
+width:60%;
+}
+
+.footerLi a{
+color: #CCC;
+}
+
+.backBtn {
+  cursor: pointer;
+  color: #3A3939;
+  width: 30%;
+  font-size: 0.8em;
+  margin-bottom: 2.8%;
+}
+.backBtn:hover{
+color:#636161;
+}
+
+.takeMeWithYou a{
+  color: #3A3939;
+}
+
+.takeMeWithYou a:hover{
+color:#5E5C5C;
+}
+
+/*=========================/
+/======MEDIA QUERIES=======/
+/==========================*/
+@media screen and (max-width : 1520px) {
+.welcomeText {
+
+    font-size: 1em;
+    width:100%;
+   }
+}
+@media screen and (max-width : 1427px) {
+.welcomeText {
+
+    font-size: 0.9em;
+    width:100%;
+   }
+.spaceing{
+    min-height:257px;
+    }
+    .footerContainer p {
+    font-size: 0.5em;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width : 1374px) {
+.welcomeText {
+
+    
+    width:100%;
+   }
+  .spaceing{
+      min-height:357px;
+    }
+        .footerContainer p {
+    font-size: 0.4em;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width : 1242px) {
+.welcomeText {
+
+    font-size: 0.8em;
+    width:100%;
+   }
+}
+@media screen and (max-width : 1140px) {
+.welcomeText {
+
+   
+    width:100%;
+   }
+   .spaceing{
+    min-height:487px;
+    }
+
+}
+@media screen and (max-width : 917px) {
+   .spaceing{
+    min-height:587px;
+    }
+
+}
+
+@media screen and (max-width : 780px) {
+.welcomeText {
+
+    font-size: 0.7em;
+    width:100%;
+   }
+   .workDescription {
+    width: 100%;
+    float: left;
+}
+   .workImage {
+    width: 100%;
+    
+    margin: 0 auto;
+}
+
+}
+
+@media screen and (max-width : 718px) {
+   .spaceing{
+       min-height:687px;
+    }
+
+}
+
+@media screen and (max-width : 660px) {
+.welcomeText {
+
+    font-size: 0.6em;
+    width:100%;
+   }
+}
+
+@media screen and (max-width : 560px) {
+.welcomeText {
+
+    font-size: 0.5em;
+    width:100%;
+   }
+}
+@media screen and (max-width : 455px) {
+.welcomeText {
+
+    font-size: 0.4em;
+    width:100%;
+   }
+}
+
+
+@media screen and (max-width : 360px) {
+.siteHighlights {
+margin-left:0px;
+}
+.techused {
+    margin-left: 0px;
+    
+}
+.workContainerBody {
+    width: 80%;
+}
+.workText {
+    width: 80%;
+}
+.workPage {
+
+    margin-left: 5px;
+   
+}
+.workLogo {
+    width: 20%;
+}
+.welcomeSpan {
+  font-size: 1em;
+    }
+    
+    .welcomeText {
+  margin-top: 47%;
+    }
+    .logoNavCol {
+  width: 20%;
+    }
+    .mySwiper {
+  width: 73%;
+    }
+    .aboutLogo {
+  width: 20%;
+    }
+    .aboutBodyContainer {
+  width: 76%;
+  margin-left: 3%;
+    }
+    .tool {
+  width: 69%;
+    }
+    .toolboxList {
+  width: 100%;
+    }
+    li {
+  font-size: 0.7em;
+    }
+    .profWork {
+  font-size: 0.6em;
+    }
+    .addOnContent {
+  height: 0 !important;
+    }
+.prowork {
+    margin-top: 30%;
+ }
+
+    #contact-form label span {
+  font-size: 0.6em;
+    }
+    #contact-form h3 {
+  font-size: 1em;
+    }
+    .resumeContainer {
+  width: 80%;
+    }
+    .styleList li {
+  font-size: 0.5em;
+  width: 96%;
+  margin-left: 9%;
+    }
+    .techTitle {
+  font-size: 0.4em;
+    }
+    .highlightsTitle {
+  font-size: 0.4em;
+    }
+    .launch {
+  width: 38%;
+    }
+    .headShot {
+  width: 45%;
+
+  margin-right: 5%;
+    }
+}
