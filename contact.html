@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="James Dalby Contact">
+    <meta name="keywords" content="James Dalby,Contact,html5,css,jquery,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!--css-->
+    <link rel="icon" type="image/png" href="img/header/logo/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/grid/css/2cols.css">
+    <link rel="stylesheet" type="text/css" href="css/grid/css/3cols.css">
+    <link rel="stylesheet" type="text/css" href="css/grid/css/4cols.css">
+    <link rel="stylesheet" type="text/css" href="css/grid/css/9cols.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:700,800,400" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contactForm.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous/swiper.min.css">
+    <!--js-->
+    <!--jquery 1.8-->
+    <script src="js/jQuery-1.8.min.js"></script>
+    <!--jquery jquery-1.11.2.min.js-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <!--modernizer-->
+    <script src="js/modernizer/modernizer.js"></script>
+    <!--maintain text uniform smothing -->
+    <script src="js/flowtype.js"></script>
+    <!--contact form success-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+    <script src="http://malsup.github.com/jquery.form.js"></script> 
+     <script> 
+        // wait for the DOM to be loaded 
+        $(document).ready(function() { 
+            // bind 'contact-form' and provide a simple callback function 
+            $('#contact-form').ajaxForm(function() { 
+                alert("Thank you for your e-mail! I will get back to you within 24 hours!"); 
+                window.location = "contact.html";
+            }); 
+        }); 
+    </script>
+    <!--analytics--> 
+            <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61241328-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+    
+       
+    <div class="contactSection">
+            <div class="section group workContent">
+                <div class="col span_1_of_3 aboutLogo">
+                    <div class="contactPageLogo">
+                        <a href="index.html"><img src="img/header/logo/james-fill.jpg" class="aboutlogoInner"/></a>
+                    </div>
+                
+                <div class="navigation aboutPage">
+                            <ul>
+                                <li>
+                                    <a href="about.html" id="preloadOne">
+                                        <img src="img/header/navigation/transparent.png" class="transparent"/>
+                                        <img src="img/header/navigation/aboutNewIcon.png" class="about"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="work.html" id="preloadTwo">
+                                        <img src="img/header/navigation/transparent.png" class="transparent"/>
+                                        <img src="img/header/navigation/worktIcon.png" class="work"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" id="preloadThree">
+                                        <img src="img/header/navigation/transparent.png" class="transparent"/>
+                                        <img src="img/header/navigation/contactIcon.png" class="contact"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="resume.html" id="preloadFour">
+                                        <img src="img/header/navigation/transparent.png" class="transparent"/>
+                                        <img src="img/header/navigation/resumeIcon.png" class="resume"/>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                    </div>
+                <div class="col span_1_of_2 aboutBodyContainer">
+                    <div class="aboutContainer">
+                        <h1 class="sectionTitle">Contact</h1>
+                        <!-- Form -->
+		                  <form id="contact-form" action="send_form_email.php" method="post">
+			                         <h3>Get in touch</h3>
+			                         <h4>Please Fill in the form below, and I will get back to you within 24 hours.</h4>
+			                 <div>
+				                <label>
+					               <span>Name: (required)</span>
+					               <input placeholder="Please enter your name" name="full_name" type="text" tabindex="1" required autofocus>
+				                </label>
+			                 </div>
+			                 <div>
+				                <label>
+					               <span>Email: (required)</span>
+					               <input placeholder="Please enter your email address" name="email" type="email" tabindex="2" required>
+				                </label>
+			                 </div>
+			                 <div>
+				                <label>
+					               <span>Subject: (required)</span>
+					               <input placeholder="Please enter your Subject" name="subject" type="subject" tabindex="2" required>
+				                </label>
+			                 </div>
+			                 <div>
+				                <label>
+					               <span>Message: (required)</span>
+					               <textarea placeholder="Include all the details you can" name="message" tabindex="5" required></textarea>
+				                </label>
+			                 </div>
+			                 <div>
+				                <button name="submit" type="submit" id="contact-submit">Send Email</button>
+			                 </div>
+		              </form>
+		              <!-- /Form --> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section group footer">
+            <div class="footerContainer">
+                <div class="col span_1_of_2">
+                <p>This website was designed and built by James Dalby<br/>
+                    &copy; Copyright 2015 James Dalby</p>
+                </div>
+                <div class="col span_1_of_2">
+                    <ul class="footerLi">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+       <!--button and basic function control-->
+    <script src="js/main.js"></script>
+    <!--text beautifier-->
+    <script src="js/flowtype.js"></script>
+    <script>
+        //flowtype handles responsive text
+$('body').flowtype();    
+$('body').flowtype({
+   minimum   : 800,
+   maximum   : 1200,
+   minFont   : 12,
+   maxFont   : 40,
+   fontRatio : 30
+});
+
+    </script>
+</body>
+</html>
